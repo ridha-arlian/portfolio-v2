@@ -22,17 +22,17 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     // '@nuxt/eslint',
     '@nuxt/fonts',
-    // '@nuxtjs/color-mode',
+    '@nuxtjs/color-mode',
   ],
   shadcn: {
     prefix: '',
     componentDir: '@/components/ui'
   },
-  fonts: {
-    families: [
-      { name: 'IBM Plex Sans', provider: 'google' },
-      { name: 'IBM Plex Mono', provider: 'google' },
-      { name: 'Fraunces', provider: 'google'},
-    ]
-  },
+  // fonts: {
+  //   families: [
+  //     { name: 'IBM Plex Sans', provider: 'google' },
+  //     { name: 'IBM Plex Mono', provider: 'google' },
+  //     { name: 'Fraunces', provider: 'google'},
+  //   ]
+  // },
 })
