@@ -6,7 +6,7 @@ import LocalTime from '@/components/LocalTime.vue'
 </script>
 
 <template>
-  <main class="mx-auto flex h-dvh max-h-dvh w-full max-w-7xl flex-col justify-between overflow-hidden p-4 sm:p-6 lg:p-8 bg-paper text-ink transition-colors duration-300">
+  <main class="mx-auto flex h-dvh max-h-dvh w-full max-w-7xl flex-col justify-between overflow-hidden p-4 sm:p-6 lg:p-8 bg-paper text-ink ">
     <header class="shrink-0 flex items-center justify-between border-b border-line pb-3 sm:pb-4 font-mono text-xs tracking-wider text-muted-foreground sm:text-sm">
       <Button 
         as-child 
