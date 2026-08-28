@@ -44,13 +44,15 @@ useSeoMeta({
             For new projects, tech collaborations, or just a thoughtful exchange, send a note. I&rsquo;m currently open to select opportunities.
           </p>
 
-          <a 
-            class="inline-flex max-w-full items-center gap-1.5 sm:gap-2 text-sm xs:text-base sm:text-2xl font-mono underline underline-offset-4 hover:opacity-70 transition-opacity mb-12" 
-            href="mailto:ridhaarlianalhaqie@gmail.com"
-          >
-            <span class="truncate">ridhaarlianalhaqie@gmail.com</span>
-            <ArrowUpRight class="h-4 w-4 sm:h-6 sm:w-6 shrink-0" />
-          </a>
+          <div class="w-full overflow-x-auto pb-2 mb-10 scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <a 
+              class="inline-flex items-center gap-2 text-xl sm:text-2xl font-mono underline underline-offset-4 hover:opacity-70 transition-opacity whitespace-nowrap" 
+              href="mailto:ridhaarlianalhaqie@gmail.com"
+            >
+              ridhaarlianalhaqie@gmail.com
+              <ArrowUpRight class="h-5 w-5 sm:h-6 sm:w-6 shrink-0" />
+            </a>
+          </div>
 
           <div class="flex flex-wrap gap-6 font-mono text-sm tracking-wider uppercase">
             <a href="https://linkedin.com/in/ridha-arlian" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1 hover:underline">
