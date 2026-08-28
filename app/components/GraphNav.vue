@@ -3,7 +3,7 @@
   import { Button } from '@/components/ui/button'
   import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
   import { useNetworkNodes } from '@/composables/useNetworkNodes'
-  import { navigationNodes } from '@/constants/navigation'
+  import { navigationNodes } from '@/data/navigation'
   import NetworkLines from '@/components/NetworkLines.vue'
 
   const active = ref('center')
