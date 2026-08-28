@@ -20,8 +20,11 @@
     </Button>
 
     <template #fallback>
-      <span class="font-mono text-xs sm:text-sm tracking-wider text-muted-foreground uppercase cursor-pointer">
+      <span class="font-mono text-xs sm:text-sm tracking-wider text-muted-foreground uppercase cursor-pointer dark:hidden">
         DARK MODE?
+      </span>
+      <span class="font-mono text-xs sm:text-sm tracking-wider text-muted-foreground uppercase cursor-pointer hidden dark:inline">
+        LIGHT MODE?
       </span>
     </template>
   </ClientOnly>
