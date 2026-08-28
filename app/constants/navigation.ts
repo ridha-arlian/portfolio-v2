@@ -14,8 +14,8 @@ export const navigationNodes: NodeItem[] = [
     href: '/skills'
   },
   {
-    id: 'experience',
-    label: 'EXPERIENCE',
+    id: 'experiences',
+    label: 'EXPERIENCES',
     detail: 'My professional journey',
     href: '/experiences'
   },
