@@ -45,11 +45,11 @@ useSeoMeta({
           </p>
 
           <a 
-            class="inline-flex items-center gap-2 text-xl sm:text-2xl font-mono underline underline-offset-4 hover:opacity-70 transition-opacity mb-12" 
+            class="inline-flex max-w-full items-center gap-1.5 sm:gap-2 text-sm xs:text-base sm:text-2xl font-mono underline underline-offset-4 hover:opacity-70 transition-opacity mb-12" 
             href="mailto:ridhaarlianalhaqie@gmail.com"
           >
-            ridhaarlianalhaqie@gmail.com
-            <ArrowUpRight class="h-5 w-5 sm:h-6 sm:w-6" />
+            <span class="truncate">ridhaarlianalhaqie@gmail.com</span>
+            <ArrowUpRight class="h-4 w-4 sm:h-6 sm:w-6 shrink-0" />
           </a>
 
           <div class="flex flex-wrap gap-6 font-mono text-sm tracking-wider uppercase">
