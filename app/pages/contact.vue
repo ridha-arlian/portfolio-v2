@@ -7,7 +7,6 @@ import { ArrowLeft, ArrowUpRight } from '@lucide/vue'
 
 useSeoMeta({
   title: 'Contact | Ridha Arlian',
-  description: 'Contact Ridha Arlian for collaborations and product work.'
 })
 </script>
 
