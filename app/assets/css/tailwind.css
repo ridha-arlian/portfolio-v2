@@ -203,7 +203,7 @@
     margin: 0;
     font: 10px/1.4 var(--font-mono);
     letter-spacing: 0.16em;
-    color: var(--color-muted);
+    color: var(--color-muted-foreground); /* was: var(--color-muted) */
   }
 
   .content-section h1, 
@@ -219,7 +219,7 @@
   .body-copy {
     margin: 0;
     max-width: 34rem;
-    color: var(--color-muted);
+    color: var(--color-muted-foreground);
     font-size: 0.95rem;
     line-height: 1.7;
   }
@@ -255,7 +255,7 @@
 
   .timeline-item p:not(.eyebrow) {
     margin: 0.25rem 0 1rem;
-    color: var(--color-muted);
+    color: var(--color-muted-foreground);
   }
 
   .timeline-item .body-copy {
@@ -290,7 +290,7 @@
 
   .project-mark {
     font: 11px var(--font-mono);
-    color: var(--color-muted);
+    color: var(--color-muted-foreground);
   }
 
   .project-arrow {
