@@ -35,7 +35,9 @@
           @click="active = active === 'center' ? '' : 'center'"
           @focus="active = 'center'"
         >
-          <span class="sr-only">Toggle Identity</span>
+          <span class="sr-only">
+            Toggle Identity
+          </span>
         </Button>
         
         <div 
@@ -51,44 +53,76 @@
         </div>
       </div>
 
-      <Tooltip v-for="node in calculatedNodes" :key="node.id">
-        <TooltipTrigger as-child>
+      <template v-if="isMobile">
+        <div
+          v-for="node in calculatedNodes"
+          :key="node.id"
+          class="absolute -translate-x-1/2 -translate-y-1/2"
+          :style="{ left: `${node.x}%`, top: `${node.y}%` }"
+        >
           <Button
             as-child
             variant="ghost"
-            class="group absolute h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full p-0 transition-all duration-700 ease-out hover:bg-transparent focus-visible:ring-1 focus-visible:ring-ink"
-            :style="{ left: `${node.x}%`, top: `${node.y}%` }"
+            class="group relative h-4 w-4 rounded-full p-0 hover:bg-transparent focus-visible:ring-1 focus-visible:ring-ink"
           >
-            <NuxtLink
-              :to="node.href || '#'"
-              @mouseenter="active = node.id"
-              @mouseleave="active = 'center'"
-              @focus="active = node.id"
-              @blur="active = 'center'"
-            >
+            <NuxtLink :to="node.href || '#'">
               <span 
-                class="h-3 w-3 rounded-full border border-ink bg-paper transition-all duration-350 group-hover:scale-[1.35] group-hover:bg-ink group-hover:ring-1 group-hover:ring-ink group-hover:ring-offset-4 group-hover:ring-offset-paper sm:h-3.5 sm:w-3.5" 
+                class="h-3 w-3 rounded-full border border-ink bg-paper transition-all duration-350 active:scale-[1.35] active:bg-ink" 
               />
-              <span class="sr-only">{{ node.label }}</span>
+
+              <span class="absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap text-center">
+                <strong class="block font-sans text-[11px] font-semibold leading-tight text-ink">
+                  {{ node.label }}
+                </strong>
+                <small class="mt-0.5 block font-mono text-[8px] leading-none tracking-widest text-muted-foreground uppercase">
+                  {{ node.detail }}
+                </small>
+              </span>
             </NuxtLink>
           </Button>
-        </TooltipTrigger>
+        </div>
+      </template>
 
-        <TooltipContent 
-          :side="isMobile ? 'bottom' : 'right'" 
-          :side-offset="isMobile ? 8 : 16" 
-          class="border-none bg-transparent p-0 shadow-none [&>svg]:hidden [&>span]:hidden"
-        >
-          <div :class="[isMobile ? 'text-center' : 'text-left', 'whitespace-nowrap']">
-            <strong class="block font-sans text-xs font-semibold leading-tight tracking-normal text-ink sm:text-base">
-              {{ node.label }}
-            </strong>
-            <small class="mt-0.5 block font-mono text-[9px] leading-none tracking-widest text-muted-foreground uppercase sm:mt-1 sm:text-xs">
-              {{ node.detail }}
-            </small>
-          </div>
-        </TooltipContent>
-      </Tooltip>
+      <template v-else>
+        <Tooltip v-for="node in calculatedNodes" :key="node.id">
+          <TooltipTrigger as-child>
+            <Button
+              as-child
+              variant="ghost"
+              class="group absolute h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full p-0 transition-all duration-700 ease-out hover:bg-transparent focus-visible:ring-1 focus-visible:ring-ink"
+              :style="{ left: `${node.x}%`, top: `${node.y}%` }"
+            >
+              <NuxtLink
+                :to="node.href || '#'"
+                @mouseenter="active = node.id"
+                @mouseleave="active = 'center'"
+                @focus="active = node.id"
+                @blur="active = 'center'"
+              >
+                <span 
+                  class="h-3 w-3 rounded-full border border-ink bg-paper transition-all duration-350 group-hover:scale-[1.35] group-hover:bg-ink group-hover:ring-1 group-hover:ring-ink group-hover:ring-offset-4 group-hover:ring-offset-paper sm:h-3.5 sm:w-3.5" 
+                />
+                <span class="sr-only">{{ node.label }}</span>
+              </NuxtLink>
+            </Button>
+          </TooltipTrigger>
+
+          <TooltipContent 
+            side="right" 
+            :side-offset="16" 
+            class="border-none bg-transparent p-0 shadow-none [&>svg]:hidden [&>span]:hidden"
+          >
+            <div class="text-left whitespace-nowrap">
+              <strong class="block font-sans text-base font-semibold leading-tight tracking-normal text-ink">
+                {{ node.label }}
+              </strong>
+              <small class="mt-0.5 block font-mono text-xs leading-none tracking-widest text-muted-foreground uppercase">
+                {{ node.detail }}
+              </small>
+            </div>
+          </TooltipContent>
+        </Tooltip>
+      </template>
 
     </section>
   </TooltipProvider>
