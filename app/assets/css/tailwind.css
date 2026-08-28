@@ -50,6 +50,9 @@
   --ink: #111111;
   --line: #deded9;
   --line-strong: #b6b6b0;
+  --border: var(--line);
+  --muted: #e5e5e0;
+  --muted-foreground: #737373;
 }
 
 .dark {
@@ -158,17 +161,26 @@
     gap: 1.5rem;
     border: 1px solid var(--color-line);
     padding: 1.5rem;
-    transition: background 0.25s, color 0.25s;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
   }
 
   .project-card:hover {
     background: var(--color-ink);
+    border-color: var(--color-ink);
+  }
+
+  .project-card:hover .section-heading,
+  .project-card:hover .project-arrow {
     color: var(--color-paper);
   }
 
-  .project-card:hover .body-copy, 
-  .project-card:hover .eyebrow {
-    color: #aaa;
+  .project-card:hover .eyebrow,
+  .project-card:hover .project-mark {
+    color: var(--color-line-strong);
+  }
+
+  .project-card:hover .body-copy {
+    color: var(--color-line);
   }
 
   .project-mark {
