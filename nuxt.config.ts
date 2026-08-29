@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   modules: [
     'shadcn-nuxt',
     '@vueuse/nuxt',
-    '@nuxt/fonts',
     '@nuxtjs/color-mode',
   ],
   shadcn: {
