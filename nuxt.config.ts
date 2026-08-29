@@ -7,9 +7,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Ridha Arlian',
-      // meta: [
-      //   { name: 'description', content: 'Cari titik temu waktu meeting untuk tim remote lintas zona waktu, tanpa login, tanpa database.' },
-      // ],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          href: '/logo.svg?v=2'
+        }
+      ]
     },
   },
   vite: {
@@ -20,7 +24,6 @@ export default defineNuxtConfig({
   modules: [
     'shadcn-nuxt',
     '@vueuse/nuxt',
-    // '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
   ],
@@ -28,11 +31,4 @@ export default defineNuxtConfig({
     prefix: '',
     componentDir: '@/components/ui'
   },
-  // fonts: {
-  //   families: [
-  //     { name: 'IBM Plex Sans', provider: 'google' },
-  //     { name: 'IBM Plex Mono', provider: 'google' },
-  //     { name: 'Fraunces', provider: 'google'},
-  //   ]
-  // },
 })

@@ -8,7 +8,7 @@ export const navigationNodes: NodeItem[] = [
     href: '/about'
   },
   {
-    id: 'skill',
+    id: 'skills',
     label: 'SKILLS',
     detail: 'My technical abilities',
     href: '/skills'
@@ -20,13 +20,13 @@ export const navigationNodes: NodeItem[] = [
     href: '/experiences'
   },
   {
-    id: 'contact',
+    id: 'contacts',
     label: 'CONTACT',
     detail: 'Get in touch',
     href: '/contact'
   },
   {
-    id: 'project',
+    id: 'projects',
     label: 'PROJECTS',
     detail: 'My selected work',
     href: '/projects'
