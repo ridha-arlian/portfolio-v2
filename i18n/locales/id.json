@@ -18,7 +18,7 @@
     "nodes": {
       "about": { "label": "TENTANG", "detail": "Tentang saya" },
       "skills": { "label": "KEAHLIAN", "detail": "Kemampuan teknis saya" },
-      "experiences": { "label": "PENGALAMAN", "detail": "Rekam jejak profesional saya" },
+      "experiences": { "label": "PENGALAMAN", "detail": "Rekam jejak saya" },
       "contacts": { "label": "KONTAK", "detail": "Hubungi saya" },
       "projects": { "label": "PROYEK", "detail": "Karya pilihan" }
     }
