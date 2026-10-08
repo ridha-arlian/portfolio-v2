@@ -1,0 +1,115 @@
+{
+  "layout": {
+    "backToGraph": "BACK TO GRAPH",
+    "home": "HOME",
+    "portfolio": "PORTFOLIO"
+  },
+  "colorMode": {
+    "dark": "DARK MODE?",
+    "light": "LIGHT MODE?"
+  },
+  "graph": {
+    "nodeNav": "NODE NAV // V1.0",
+    "selectNode": "SELECT A NODE TO EXPLORE",
+    "role": "SOFTWARE ENGINEER",
+    "toggleIdentity": "Toggle Identity"
+  },
+  "nav": {
+    "nodes": {
+      "about": { "label": "ABOUT", "detail": "A little about me" },
+      "skills": { "label": "SKILLS", "detail": "My technical abilities" },
+      "experiences": { "label": "EXPERIENCES", "detail": "My professional journey" },
+      "contacts": { "label": "CONTACT", "detail": "Get in touch" },
+      "projects": { "label": "PROJECTS", "detail": "My selected work" }
+    }
+  },
+  "home": {
+    "footer": "BASED IN BANDA ACEH, ID"
+  },
+  "about": {
+    "eyebrow": "A LITTLE ABOUT ME",
+    "heading": "I turn complex ideas into clear, reliable web applications.",
+    "p1": "I'm an Informatics graduate and software engineer based in Banda Aceh. I focus on building scalable web applications, clean system architectures, and seamless user experiences.",
+    "p2": "Currently open for software engineering roles, technical collaborations, and building impactful digital products. Drop a note to discuss.",
+    "footer": "ABOUT"
+  },
+  "skills": {
+    "eyebrow": "SKILLS & STACK",
+    "heading1": "Technologies and tools",
+    "heading2": "I use to build reliable software.",
+    "groups": ["FRONTEND & UI", "BACKEND & DATABASE", "TOOLS & ENVIRONMENT"],
+    "footer": "SKILLS"
+  },
+  "experiences": {
+    "eyebrow": "SELECTED EXPERIENCE",
+    "heading1": "Experience built on real projects,",
+    "heading2": "real teams, and continuous learning.",
+    "footer": "EXPERIENCES",
+    "items": [
+      {
+        "year": "2026—Now",
+        "role": "Junior System Information Development Intern",
+        "company": "Syiah Kuala University · Banda Aceh, Indonesia",
+        "description": "--"
+      },
+      {
+        "year": "2024—2025",
+        "role": "Full Stack Developer",
+        "company": "Syiah Kuala University · Banda Aceh, Indonesia",
+        "description": "Developed an online exam proctoring system using WebRTC and Mediasoup as a Bachelor's Final Project."
+      },
+      {
+        "year": "2022",
+        "role": "UI/UX Developer Intern",
+        "company": "Telkom Indonesia WITEL Aceh · Banda Aceh, Indonesia",
+        "description": "Designed user interface and user experience solutions using Figma during professional internship."
+      },
+      {
+        "year": "2022",
+        "role": "Web Developer",
+        "company": "Pondok Ulung Village Government · Bener Meriah, Indonesia",
+        "description": "Built village web applications using React, Next.js, and Chakra UI as part of the Community Service Program."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "SELECTED PROJECTS",
+    "heading1": "Selected projects",
+    "heading2": "I've designed and built.",
+    "footer": "PROJECTS",
+    "items": [
+      {
+        "description": "A web diary inspired by the Homework for Life method, built with Next.js, Chakra UI, and Google Spreadsheet integration."
+      },
+      {
+        "description": "Developed a proctoring feature for CBT using WebRTC and mediasoup, with three integrated applications for participants, proctors, and admins."
+      },
+      {
+        "description": "A System Information for Clinic Management built with Laravel and Filament 4."
+      },
+      {
+        "description": "A tip jar website built with Nuxt, Shadcn UI, Tailwind CSS, and Midtrans."
+      },
+      {
+        "description": "A split bill web application built with Nuxt, Shadcn UI, Tailwind CSS, and TypeScript."
+      },
+      {
+        "description": "A zero-friction, stateless tool designed to help remote teams coordinate meeting schedules across different time zones."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "LET'S TALK",
+    "heading1": "Have a good idea?",
+    "heading2": "Let's bring it to life.",
+    "body": "For new projects, tech collaborations, or just a thoughtful exchange, send a note. I'm currently open to select opportunities.",
+    "footer": "CONTACT"
+  },
+  "seo": {
+    "about": { "title": "About - Ridha Arlian" },
+    "skills": { "title": "Skills - Ridha Arlian", "description": "Tools and craft used to make ideas tangible." },
+    "experiences": { "title": "Experiences - Ridha Arlian", "description": "Professional experience of Ridha Arlian." },
+    "projects": { "title": "Projects - Ridha Arlian" },
+    "contact": { "title": "Contact - Ridha Arlian" }
+  }
+}

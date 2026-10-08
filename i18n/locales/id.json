@@ -1,0 +1,115 @@
+{
+  "layout": {
+    "backToGraph": "KEMBALI KE GRAF",
+    "home": "BERANDA",
+    "portfolio": "PORTOFOLIO"
+  },
+  "colorMode": {
+    "dark": "MODE GELAP?",
+    "light": "MODE TERANG?"
+  },
+  "graph": {
+    "nodeNav": "NAVIGASI NODE // V1.0",
+    "selectNode": "PILIH NODE UNTUK MENJELAJAH",
+    "role": "SOFTWARE ENGINEER",
+    "toggleIdentity": "Ganti Identitas"
+  },
+  "nav": {
+    "nodes": {
+      "about": { "label": "TENTANG", "detail": "Tentang saya" },
+      "skills": { "label": "KEAHLIAN", "detail": "Kemampuan teknis saya" },
+      "experiences": { "label": "PENGALAMAN", "detail": "Rekam jejak profesional saya" },
+      "contacts": { "label": "KONTAK", "detail": "Hubungi saya" },
+      "projects": { "label": "PROYEK", "detail": "Karya pilihan" }
+    }
+  },
+  "home": {
+    "footer": "BERBASIS DI BANDA ACEH, ID"
+  },
+  "about": {
+    "eyebrow": "TENTANG SAYA",
+    "heading": "Saya mengubah ide yang rumit menjadi aplikasi web yang andal dan mudah digunakan.",
+    "p1": "Saya lulusan Informatika dan software engineer yang berbasis di Banda Aceh. Saya berfokus pada pengembangan aplikasi web yang skalabel, arsitektur sistem yang rapi, dan pengalaman pengguna yang mulus.",
+    "p2": "Saat ini saya terbuka untuk posisi software engineer, kolaborasi teknis, dan pengembangan produk digital yang berdampak. Silakan hubungi saya untuk berdiskusi.",
+    "footer": "TENTANG"
+  },
+  "skills": {
+    "eyebrow": "KEAHLIAN & TEKNOLOGI",
+    "heading1": "Teknologi dan alat",
+    "heading2": "yang saya gunakan untuk membangun perangkat lunak andal.",
+    "groups": ["FRONTEND & UI", "BACKEND & DATABASE", "ALAT & LINGKUNGAN KERJA"],
+    "footer": "KEAHLIAN"
+  },
+  "experiences": {
+    "eyebrow": "PENGALAMAN TERPILIH",
+    "heading1": "Pengalaman dari proyek nyata,",
+    "heading2": "kerja tim, dan proses belajar yang terus berjalan.",
+    "footer": "PENGALAMAN",
+    "items": [
+      {
+        "year": "2026—Sekarang",
+        "role": "Magang Pengembang Sistem Informasi Junior",
+        "company": "Universitas Syiah Kuala · Banda Aceh, Indonesia",
+        "description": "--"
+      },
+      {
+        "year": "2024—2025",
+        "role": "Full Stack Developer",
+        "company": "Universitas Syiah Kuala · Banda Aceh, Indonesia",
+        "description": "Mengembangkan sistem pengawasan ujian daring menggunakan WebRTC dan Mediasoup sebagai Tugas Akhir S1."
+      },
+      {
+        "year": "2022",
+        "role": "UI/UX Developer (Magang)",
+        "company": "Telkom Indonesia WITEL Aceh · Banda Aceh, Indonesia",
+        "description": "Merancang antarmuka dan pengalaman pengguna menggunakan Figma selama magang profesional."
+      },
+      {
+        "year": "2022",
+        "role": "Web Developer",
+        "company": "Pemerintah Desa Pondok Ulung · Bener Meriah, Indonesia",
+        "description": "Membangun aplikasi web desa menggunakan React, Next.js, dan Chakra UI dalam Program Kuliah Kerja Nyata (KKN)."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "PROYEK PILIHAN",
+    "heading1": "Proyek pilihan",
+    "heading2": "yang saya rancang dan bangun.",
+    "footer": "PROYEK",
+    "items": [
+      {
+        "description": "Diari web yang terinspirasi metode Homework for Life, dibangun dengan Next.js, Chakra UI, dan integrasi Google Spreadsheet."
+      },
+      {
+        "description": "Fitur pengawasan untuk ujian berbasis komputer (CBT) menggunakan WebRTC dan mediasoup, terdiri dari tiga aplikasi untuk peserta, pengawas, dan admin."
+      },
+      {
+        "description": "Sistem informasi manajemen klinik yang dibangun dengan Laravel dan Filament 4."
+      },
+      {
+        "description": "Situs saweran digital yang dibangun dengan Nuxt, Shadcn UI, Tailwind CSS, dan Midtrans."
+      },
+      {
+        "description": "Aplikasi patungan tagihan yang dibangun dengan Nuxt, Shadcn UI, Tailwind CSS, dan TypeScript."
+      },
+      {
+        "description": "Alat praktis tanpa penyimpanan data, untuk membantu tim jarak jauh menentukan jadwal rapat lintas zona waktu."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "HUBUNGI SAYA",
+    "heading1": "Punya ide bagus?",
+    "heading2": "Mari wujudkan bersama.",
+    "body": "Untuk proyek baru, kolaborasi teknis, atau sekadar bertukar pikiran, silakan kirim pesan. Saya terbuka untuk peluang yang sesuai.",
+    "footer": "KONTAK"
+  },
+  "seo": {
+    "about": { "title": "Tentang - Ridha Arlian" },
+    "skills": { "title": "Keahlian - Ridha Arlian", "description": "Alat dan keahlian yang saya gunakan untuk mewujudkan ide." },
+    "experiences": { "title": "Pengalaman - Ridha Arlian", "description": "Pengalaman profesional Ridha Arlian." },
+    "projects": { "title": "Proyek - Ridha Arlian" },
+    "contact": { "title": "Kontak - Ridha Arlian" }
+  }
+}

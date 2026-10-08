@@ -1,8 +1,11 @@
 <script setup lang="ts">
   import { Button } from '@/components/ui/button'
   import ColorModeToggle from '@/components/ColorModeToggle.vue'
+  import LocaleToggle from '@/components/LocaleToggle.vue'
   import LocalTime from '@/components/LocalTime.vue'
   import { ArrowLeft } from '@lucide/vue'
+
+  const localePath = useLocalePath()
 </script>
 
 <template>
@@ -11,14 +14,17 @@
     <header class="layout-header">
       <slot name="header-action">
         <Button as-child variant="ghost" size="sm" class="nav-button">
-          <NuxtLink to="/" class="flex items-center gap-2">
+          <NuxtLink :to="localePath('/')" class="flex items-center gap-2">
             <ArrowLeft class="h-4 w-4 shrink-0" />
-            BACK TO GRAPH
+            {{ $t('layout.backToGraph') }}
           </NuxtLink>
         </Button>
       </slot>
 
-      <ColorModeToggle />
+      <div class="flex items-center gap-4 sm:gap-5">
+        <LocaleToggle class="hidden sm:inline-flex" />
+        <ColorModeToggle />
+      </div>
     </header>
 
     <slot />
@@ -26,10 +32,13 @@
     <footer class="layout-footer">
       <span class="uppercase">
         <slot name="footer-text">
-          PORTFOLIO
+          {{ $t('layout.portfolio') }}
         </slot>
       </span>
-      <LocalTime />
+      <div class="flex items-center justify-between gap-4">
+        <LocalTime />
+        <LocaleToggle class="sm:hidden" />
+      </div>
     </footer>
   </main>
 </template>

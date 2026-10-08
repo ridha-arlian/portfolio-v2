@@ -30,15 +30,15 @@
       @click="toggleDarkMode"
       class="h-auto p-0 font-mono text-xs sm:text-sm tracking-wider text-ink uppercase transition-opacity hover:opacity-50 bg-transparent! !hover:bg-transparent !hover:text-ink focus-visible:ring-0 focus-visible:ring-offset-0 cursor-pointer select-none"
     >
-      {{ colorMode.value === 'dark' ? 'LIGHT MODE?' : 'DARK MODE?' }}
+      {{ colorMode.value === 'dark' ? $t('colorMode.light') : $t('colorMode.dark') }}
     </Button>
 
     <template #fallback>
       <span class="font-mono text-xs sm:text-sm tracking-wider text-muted-foreground uppercase cursor-pointer dark:hidden">
-        DARK MODE?
+        {{ $t('colorMode.dark') }}
       </span>
       <span class="font-mono text-xs sm:text-sm tracking-wider text-muted-foreground uppercase cursor-pointer hidden dark:inline">
-        LIGHT MODE?
+        {{ $t('colorMode.light') }}
       </span>
     </template>
   </ClientOnly>

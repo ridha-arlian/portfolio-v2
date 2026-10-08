@@ -3,9 +3,13 @@
   import { ArrowUpRight, Dot } from '@lucide/vue'
   import { SKILL_GROUPS } from '@/data/skills'
 
+  const { t } = useI18n()
+  const seoTitle = computed(() => t('seo.skills.title'))
+  const seoDescription = computed(() => t('seo.skills.description'))
+
   useSeoMeta({
-    title: 'Skills | Ridha Arlian',
-    description: 'Tools and craft used to make ideas tangible.'
+    title: seoTitle,
+    description: seoDescription
   })
 </script>
 
@@ -14,17 +18,17 @@
     <section class="flex-1 min-h-0 flex flex-col justify-center py-4 sm:py-6 max-w-4xl mx-auto w-full">
       <div>
         <span class="eyebrow">
-          SKILLS & STACK
+          {{ $t('skills.eyebrow') }}
         </span>
         <h1 class="page-heading">
-          Technologies and tools<br class="hidden sm:inline" /> I use to build reliable software.
+          {{ $t('skills.heading1') }}<br class="hidden sm:inline" /> {{ $t('skills.heading2') }}
         </h1>
       </div>
 
       <div class="space-y-6 sm:space-y-8 w-full">
-        <article v-for="group in SKILL_GROUPS" :key="group.title">
+        <article v-for="(group, groupIndex) in SKILL_GROUPS" :key="group.title">
           <span class="eyebrow mb-1.5 sm:mb-2">
-            {{ group.title }}
+            {{ $t('skills.groups[' + groupIndex + ']') }}
           </span>
 
           <ScrollArea class="w-full whitespace-nowrap">
@@ -57,7 +61,7 @@
     </section>
 
     <template #footer-text>
-      SKILLS
+      {{ $t('skills.footer') }}
     </template>
   </NuxtLayout>
 </template>

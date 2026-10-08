@@ -2,8 +2,11 @@
   import { ScrollArea } from '@/components/ui/scroll-area'
   import { ArrowUpRight } from '@lucide/vue'
 
+  const { t } = useI18n()
+  const seoTitle = computed(() => t('seo.contact.title'))
+
   useSeoMeta({
-    title: 'Contact | Ridha Arlian',
+    title: seoTitle,
   })
 </script>
 
@@ -13,15 +16,15 @@
       <ScrollArea class="h-full w-full pr-4">
         <div class="flex min-h-full flex-col justify-center max-w-2xl mx-auto py-8">
           <span class="eyebrow">
-            LET&rsquo;S TALK
+            {{ $t('contact.eyebrow') }}
           </span>
           
           <h1 class="page-heading">
-            Have a good idea?<br />Let&rsquo;s bring it to life.
+            {{ $t('contact.heading1') }}<br />{{ $t('contact.heading2') }}
           </h1>
           
           <p class="body-copy mb-8">
-            For new projects, tech collaborations, or just a thoughtful exchange, send a note. I&rsquo;m currently open to select opportunities.
+            {{ $t('contact.body') }}
           </p>
 
           <div class="w-full overflow-x-auto pb-2 mb-10 scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
@@ -64,7 +67,7 @@
     </section>
 
     <template #footer-text>
-      CONTACT
+      {{ $t('contact.footer') }}
     </template>
   </NuxtLayout>
 </template>

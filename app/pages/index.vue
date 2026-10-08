@@ -1,14 +1,16 @@
 <script setup lang="ts">
   import { Button } from '@/components/ui/button'
   import GraphNav from '@/components/GraphNav.vue'
+
+  const localePath = useLocalePath()
 </script>
 
 <template>
   <NuxtLayout>
     <template #header-action>
       <Button as-child variant="ghost" size="sm" class="nav-button">
-        <NuxtLink to="/">
-          HOME
+        <NuxtLink :to="localePath('/')">
+          {{ $t('layout.home') }}
         </NuxtLink>
       </Button>
     </template>
@@ -18,7 +20,7 @@
     </section>
 
     <template #footer-text>
-      BASED IN BANDA ACEH, ID
+      {{ $t('home.footer') }}
     </template>
   </NuxtLayout>
 </template>

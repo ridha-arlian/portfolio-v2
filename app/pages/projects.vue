@@ -3,8 +3,11 @@
   import { ArrowUpRight } from '@lucide/vue'
   import { projects } from '@/data/projects'
 
+  const { t } = useI18n()
+  const seoTitle = computed(() => t('seo.projects.title'))
+
   useSeoMeta({
-    title: 'Projects | Ridha Arlian',
+    title: seoTitle,
   })
 </script>
 
@@ -14,15 +17,15 @@
       <ScrollArea class="h-full w-full pr-4">
         <div class="max-w-4xl mx-auto py-8">
           <span class="eyebrow">
-            SELECTED PROJECTS
+            {{ $t('projects.eyebrow') }}
           </span>
           <h1 class="page-heading">
-            Turning ideas into<br />functional software.
+            {{ $t('projects.heading1') }}<br />{{ $t('projects.heading2') }}
           </h1>
 
           <div class="project-grid">
             <NuxtLink
-              v-for="project in projects"
+              v-for="(project, projectIndex) in projects"
               :key="project.name"
               :to="project.url"
               target="_blank"
@@ -39,7 +42,7 @@
                   {{ project.name }}
                 </h2>
                 <p class="body-copy">
-                  {{ project.description }}
+                  {{ $t('projects.items[' + projectIndex + '].description') }}
                 </p>
               </div>
               <ArrowUpRight class="project-arrow h-4 w-4" />
@@ -50,7 +53,7 @@
     </section>
 
     <template #footer-text>
-      PROJECTS
+      {{ $t('projects.footer') }}
     </template>
   </NuxtLayout>
 </template>
