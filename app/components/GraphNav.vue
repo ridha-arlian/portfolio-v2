@@ -40,9 +40,10 @@
           </span>
         </Button>
         
-        <div 
-          class="absolute top-8 text-center whitespace-nowrap transition-opacity duration-300 pointer-events-none sm:top-10"
-          :class="active === 'center' ? 'opacity-100' : 'opacity-0'"
+        <div
+          class="absolute top-8 text-center whitespace-nowrap transition-all duration-300 ease-out will-change-[opacity,transform,filter] pointer-events-none sm:top-10"
+          :class="active === 'center' ? 'opacity-100 translate-y-0 blur-none scale-100' : 'opacity-0 translate-y-2 blur-[2px] scale-[0.98]'"
+          :aria-hidden="active !== 'center'"
         >
           <strong class="block font-sans text-sm font-bold leading-tight tracking-wide sm:text-lg">
             RIDHA<br/>ARLIAN
