@@ -46,9 +46,9 @@
           :class="active === 'center' ? 'opacity-100 translate-y-0 blur-none scale-100' : 'opacity-0 translate-y-2 blur-[2px] scale-[0.98]'"
           :aria-hidden="active !== 'center'"
         >
-          <strong class="block font-sans text-sm font-bold leading-tight tracking-wide sm:text-lg">
+          <h1 class="block font-sans text-sm font-bold leading-tight tracking-wide sm:text-lg">
             RIDHA<br/>ARLIAN
-          </strong>
+          </h1>
           <small class="mt-0.5 block font-mono text-[9px] tracking-widest text-muted-foreground uppercase sm:mt-1 sm:text-xs">
             {{ $t('graph.role') }}
           </small>

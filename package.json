@@ -12,6 +12,7 @@
   "dependencies": {
     "@lucide/vue": "^1.17.0",
     "@nuxtjs/i18n": "^10.6.0",
+    "@nuxtjs/sitemap": "^8.6.1",
     "@tailwindcss/vite": "^4.3.0",
     "@vueuse/core": "^14.3.0",
     "@vueuse/nuxt": "^14.4.0",

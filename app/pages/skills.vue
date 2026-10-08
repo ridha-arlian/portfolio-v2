@@ -9,7 +9,9 @@
 
   useSeoMeta({
     title: seoTitle,
-    description: seoDescription
+    description: seoDescription,
+    ogTitle: seoTitle,
+    ogDescription: seoDescription,
   })
 </script>
 

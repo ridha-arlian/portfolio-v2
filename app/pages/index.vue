@@ -3,6 +3,36 @@
   import GraphNav from '@/components/GraphNav.vue'
 
   const localePath = useLocalePath()
+  const { t } = useI18n()
+  const seoTitle = computed(() => t('seo.home.title'))
+  const seoDescription = computed(() => t('seo.home.description'))
+
+  useSeoMeta({
+    title: seoTitle,
+    description: seoDescription,
+    ogTitle: seoTitle,
+    ogDescription: seoDescription,
+  })
+
+  useHead({
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Ridha Arlian',
+          jobTitle: 'Software Engineer',
+          url: 'https://ridhaarlian.my.id',
+          sameAs: [
+            'https://linkedin.com/in/ridha-arlian',
+            'https://github.com/ridha-arlian',
+            'https://instagram.com/ridha_arlian',
+          ],
+        }),
+      },
+    ],
+  })
 </script>
 
 <template>

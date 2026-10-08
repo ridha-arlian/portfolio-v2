@@ -106,10 +106,11 @@
     "footer": "CONTACT"
   },
   "seo": {
-    "about": { "title": "About - Ridha Arlian" },
+    "home": { "title": "Ridha Arlian", "description": "Portfolio of Ridha Arlian, a software engineer based in Banda Aceh, Indonesia." },
+    "about": { "title": "About - Ridha Arlian", "description": "Learn more about Ridha Arlian, a software engineer based in Banda Aceh, Indonesia." },
     "skills": { "title": "Skills - Ridha Arlian", "description": "Tools and craft used to make ideas tangible." },
     "experiences": { "title": "Experiences - Ridha Arlian", "description": "Professional experience of Ridha Arlian." },
-    "projects": { "title": "Projects - Ridha Arlian" },
-    "contact": { "title": "Contact - Ridha Arlian" }
+    "projects": { "title": "Projects - Ridha Arlian", "description": "Selected projects and work by Ridha Arlian." },
+    "contact": { "title": "Contact - Ridha Arlian", "description": "Get in touch with Ridha Arlian for new projects and collaborations." }
   }
 }

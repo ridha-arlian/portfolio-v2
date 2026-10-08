@@ -13,8 +13,23 @@ export default defineNuxtConfig({
           type: 'image/svg+xml',
           href: '/logo.svg?v=2'
         }
-      ]
+      ],
+      meta: [
+        {
+          name: 'description',
+          content: 'Portfolio of Ridha Arlian, a software engineer based in Banda Aceh, Indonesia.'
+        },
+        { name: 'theme-color', content: '#f5f5f2' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Ridha Arlian' },
+        { property: 'og:image', content: 'https://ridhaarlian.my.id/og-image.png' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+      ],
     },
+  },
+  site: {
+    url: 'https://ridhaarlian.my.id',
+    name: 'Ridha Arlian',
   },
   vite: {
     plugins: [
@@ -26,8 +41,10 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
+    '@nuxtjs/sitemap',
   ],
   i18n: {
+    baseUrl: 'https://ridhaarlian.my.id',
     defaultLocale: 'en',
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },

@@ -4,9 +4,13 @@
 
   const { t } = useI18n()
   const seoTitle = computed(() => t('seo.contact.title'))
+  const seoDescription = computed(() => t('seo.contact.description'))
 
   useSeoMeta({
     title: seoTitle,
+    description: seoDescription,
+    ogTitle: seoTitle,
+    ogDescription: seoDescription,
   })
 </script>
 
