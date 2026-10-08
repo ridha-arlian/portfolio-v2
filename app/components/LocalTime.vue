@@ -26,11 +26,11 @@
 
 <template>
   <ClientOnly>
-    <span>
+    <span class="min-w-0 truncate">
       {{ currentTime }} WIB [UTC+7]
     </span>
     <template #fallback>
-      <span>
+      <span class="min-w-0 truncate">
         --:--:-- WIB [UTC+7]
       </span>
     </template>

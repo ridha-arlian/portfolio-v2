@@ -31,6 +31,11 @@ export default defineNuxtConfig({
     url: 'https://ridhaarlian.my.id',
     name: 'Ridha Arlian',
   },
+  sitemap: {
+    // Prerender sitemap as static files at build time so crawlers
+    // always get an instant 200 (no on-demand generation on cold serverless functions)
+    zeroRuntime: true,
+  },
   vite: {
     plugins: [
       tailwindcss(),

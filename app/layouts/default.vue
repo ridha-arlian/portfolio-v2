@@ -11,17 +11,17 @@
 <template>
   <main class="mx-auto flex h-dvh max-h-dvh w-full max-w-7xl flex-col justify-between overflow-hidden p-4 bg-paper text-ink sm:p-6 lg:p-8">
     
-    <header class="layout-header">
+    <header class="layout-header gap-2 sm:gap-4">
       <slot name="header-action">
-        <Button as-child variant="ghost" size="sm" class="nav-button">
-          <NuxtLink :to="localePath('/')" class="flex items-center gap-2">
+        <Button as-child variant="ghost" size="sm" class="nav-button min-w-0">
+          <NuxtLink :to="localePath('/')" class="flex min-w-0 items-center gap-2">
             <ArrowLeft class="h-4 w-4 shrink-0" />
-            {{ $t('layout.backToGraph') }}
+            <span class="truncate">{{ $t('layout.backToGraph') }}</span>
           </NuxtLink>
         </Button>
       </slot>
 
-      <div class="flex items-center gap-4 sm:gap-5">
+      <div class="flex shrink-0 items-center gap-2 sm:gap-5">
         <LocaleToggle class="hidden sm:inline-flex" />
         <ColorModeToggle />
       </div>
@@ -35,9 +35,9 @@
           {{ $t('layout.portfolio') }}
         </slot>
       </span>
-      <div class="flex items-center justify-between gap-4">
+      <div class="flex items-center justify-between gap-2 sm:gap-4">
         <LocalTime />
-        <LocaleToggle class="sm:hidden" />
+        <LocaleToggle class="inline-flex sm:hidden" />
       </div>
     </footer>
   </main>

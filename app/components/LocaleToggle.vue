@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <span class="inline-flex items-center gap-1.5 font-mono text-xs sm:text-sm tracking-wider uppercase select-none">
+  <span class="items-center gap-1.5 whitespace-nowrap font-mono text-xs sm:text-sm tracking-wider uppercase select-none leading-none shrink-0">
     <template v-for="(option, index) in options" :key="option.code">
       <span v-if="index > 0" class="text-muted-foreground/50" aria-hidden="true">|</span>
       <NuxtLink

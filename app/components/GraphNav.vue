@@ -72,13 +72,20 @@
                 class="h-3 w-3 rounded-full border border-ink bg-paper transition-all duration-350 active:scale-[1.35] active:bg-ink" 
               />
 
-              <span class="absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap text-center">
+              <span
+                class="absolute whitespace-nowrap"
+                :class="[
+                  node.y > 80 ? 'bottom-full mb-1' : 'top-full mt-1',
+                  node.x > 65
+                    ? 'right-1/2 translate-x-1/2 text-right'
+                    : node.x < 30
+                      ? 'left-1/2 text-left'
+                      : 'left-1/2 -translate-x-1/2 text-center',
+                ]"
+              >
                 <strong class="block font-sans text-[11px] font-semibold leading-tight text-ink">
                   {{ $t('nav.nodes.' + node.id + '.label') }}
                 </strong>
-                <small class="mt-0.5 block font-mono text-[8px] leading-none tracking-widest text-muted-foreground uppercase">
-                  {{ $t('nav.nodes.' + node.id + '.detail') }}
-                </small>
               </span>
             </NuxtLink>
           </Button>
