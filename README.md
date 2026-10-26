@@ -19,6 +19,7 @@ Personal portfolio website of Ridha Arlian. Built with Nuxt 4 and Tailwind CSS v
 - **Graph node navigation** - homepage is an interactive node graph; hover a node on desktop to preview, tap a node on mobile to visit. Node labels adapt their placement (and simplify to one line on mobile) so nothing gets clipped.
 - **Bilingual (EN/ID)** - English by default, Indonesian under the `/id` prefix with `prefix_except_default` strategy. Language toggle lives in the header on desktop and in the footer on mobile. The choice is remembered via the `i18n_redirected` cookie.
 - **Dark / light mode** - system-aware toggle with smooth color transitions across all elements (disabled automatically for `prefers-reduced-motion`).
+- **Private project case studies** - projects without a public link get a shared, data-driven detail page at `/projects/[slug]`. These pages are `noindex`, excluded from the sitemap, and fall back to a minimal notice when detail copy is not ready.
 - **SEO** - per-page titles/descriptions/OG tags in both locales, canonical + `hreflang` (`en`/`id`/`x-default`) cluster, prerendered `sitemap.xml` (index + per-locale sitemaps), `robots.txt` with sitemap directive, JSON-LD `Person` schema and OG image on the homepage.
 
 ## Getting Started
@@ -46,7 +47,7 @@ pnpm preview
 
 ```
 app/
-├── pages/            # index, about, skills, experiences, projects, contact
+├── pages/            # index, about, skills, experiences, projects, projects/[slug], contact
 ├── components/       # GraphNav, NetworkLines, LocaleToggle, ColorModeToggle, LocalTime
 │   └── ui/           # shadcn-vue primitives (button, tooltip, scroll-area, ...)
 ├── composables/      # useNetworkNodes (graph layout + mobile detection)
@@ -61,10 +62,23 @@ nuxt.config.ts        # modules, i18n, sitemap, site URL, global head tags
 ## Working with i18n
 
 - All user-facing copy lives in `i18n/locales/en.json` and `id.json` (same key structure) and is rendered via `$t()` / `useI18n()`.
-- Array content (experiences, projects, skill groups) is translated per index, e.g. `$t('experiences.items[' + i + '].role')` - keep the order of locale arrays in sync with `app/data/*`.
+- Array content (experiences, skill groups) is translated per index, e.g. `$t('experiences.items[' + i + '].role')` - keep the order of locale arrays in sync with `app/data/*`.
+- Project copy is keyed by slug, e.g. `projects.items.catardot.description`, so projects can be reordered without breaking translations.
 - Internal links must go through `localePath()` / `switchLocalePath()` so they stay inside the active locale.
 - **Do not use `|` inside locale strings** - vue-i18n parses it as a plural separator and truncates the message (use `-` instead).
 - After adding the `@nuxtjs/i18n` module or new locale files, restart the dev server (locale hashes are read at startup).
+
+## Working with projects
+
+Project metadata lives in `app/data/projects.ts`. Public projects need a `url` and open externally; private projects use the shared `/projects/[slug]` page and are marked `noindex`.
+
+To add a private project:
+
+1. Add an entry with a unique `slug` and `visibility: 'private'` to `app/data/projects.ts`.
+2. Add `projects.items.<slug>.description` in both locale files.
+3. Optionally add `projects.items.<slug>.detail` for the intro, metadata, sections, and media alt/caption, then list the section IDs in the project's `detailSections`.
+
+Without detail copy, the page still renders a minimal private-project notice using the card description.
 
 ## SEO & Deployment
 
