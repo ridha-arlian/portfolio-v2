@@ -77,26 +77,67 @@
     "heading1": "Proyek pilihan",
     "heading2": "yang saya rancang dan bangun.",
     "footer": "PROYEK",
-    "items": [
-      {
+    "privateLabel": "PRIVAT",
+    "detail": {
+      "back": "KEMBALI KE PROYEK",
+      "privateBadge": "PROYEK PRIVAT",
+      "projectLabel": "PROYEK {number} / {type}",
+      "noticeLabel": "PEMBERITAHUAN AKSES",
+      "noticeTitle": "Tidak ada demo publik. Tidak ada tautan publik.",
+      "noticeBody": "Proyek ini tidak dapat diakses publik. Saya bisa menjelaskan arsitektur, peran saya, dan keputusan teknisnya secara langsung.",
+      "noticeCta": "Minta penjelasan langsung",
+      "meta": {
+        "role": "PERAN",
+        "period": "PERIODE",
+        "context": "KONTEKS",
+        "access": "AKSES"
+      },
+      "accessValue": "Privat",
+      "sectionsHeading": "YANG SAYA BANGUN",
+      "footer": "PROYEK PRIVAT"
+    },
+    "items": {
+      "catardot": {
         "description": "Diari web yang terinspirasi metode Homework for Life, dibangun dengan Next.js, Chakra UI, dan integrasi Google Spreadsheet."
       },
-      {
-        "description": "Fitur pengawasan untuk ujian berbasis komputer (CBT) menggunakan WebRTC dan mediasoup, terdiri dari tiga aplikasi untuk peserta, pengawas, dan admin."
+      "online-exam-proctoring": {
+        "description": "Fitur pengawasan untuk ujian berbasis komputer (CBT) menggunakan WebRTC dan mediasoup, terdiri dari tiga aplikasi untuk peserta, pengawas, dan admin.",
+        "detail": {
+          "intro": "Sistem pengawasan ujian berbasis WebRTC untuk ujian berbasis komputer, dengan tiga aplikasi yang saling terhubung untuk peserta, pengawas, dan admin.",
+          "meta": {
+            "role": "Full Stack Developer",
+            "period": "2024—2025",
+            "context": "Tugas Akhir S1"
+          },
+          "sections": {
+            "realtime": {
+              "title": "SESI REAL-TIME",
+              "body": "WebRTC membawa sesi langsung antara peserta ujian dan pengawas."
+            },
+            "media": {
+              "title": "ROUTING MEDIA",
+              "body": "mediasoup menangani lapisan routing media."
+            },
+            "apps": {
+              "title": "TIGA APLIKASI TERHUBUNG",
+              "body": "Antarmuka peserta, pengawas, dan admin, dibangun sebagai satu alur kerja terintegrasi."
+            }
+          }
+        }
       },
-      {
+      "medicin": {
         "description": "Sistem informasi manajemen klinik yang dibangun dengan Laravel dan Filament 4."
       },
-      {
+      "sakoe": {
         "description": "Situs saweran digital yang dibangun dengan Nuxt, Shadcn UI, Tailwind CSS, dan Midtrans."
       },
-      {
+      "kongsi": {
         "description": "Aplikasi patungan tagihan yang dibangun dengan Nuxt, Shadcn UI, Tailwind CSS, dan TypeScript."
       },
-      {
+      "terrmin": {
         "description": "Alat praktis tanpa penyimpanan data, untuk membantu tim jarak jauh menentukan jadwal rapat lintas zona waktu."
       }
-    ]
+    }
   },
   "contact": {
     "eyebrow": "HUBUNGI SAYA",
@@ -111,6 +152,7 @@
     "skills": { "title": "Keahlian - Ridha Arlian", "description": "Alat dan keahlian yang saya gunakan untuk mewujudkan ide." },
     "experiences": { "title": "Pengalaman - Ridha Arlian", "description": "Pengalaman profesional Ridha Arlian." },
     "projects": { "title": "Proyek - Ridha Arlian", "description": "Proyek dan karya pilihan Ridha Arlian." },
+    "projectDetail": { "title": "Proyek Privat: {name} - Ridha Arlian", "description": "Studi kasus proyek privat: {name}. Tidak ada demo publik." },
     "contact": { "title": "Kontak - Ridha Arlian", "description": "Hubungi Ridha Arlian untuk proyek baru dan kolaborasi." }
   }
 }

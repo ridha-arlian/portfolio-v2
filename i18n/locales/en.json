@@ -77,26 +77,67 @@
     "heading1": "Selected projects",
     "heading2": "I've designed and built.",
     "footer": "PROJECTS",
-    "items": [
-      {
+    "privateLabel": "PRIVATE",
+    "detail": {
+      "back": "BACK TO PROJECTS",
+      "privateBadge": "PRIVATE PROJECT",
+      "projectLabel": "PROJECT {number} / {type}",
+      "noticeLabel": "ACCESS NOTICE",
+      "noticeTitle": "No public demo. No public link.",
+      "noticeBody": "This project is not publicly accessible. I can walk you through the architecture, my role, and the decisions behind it.",
+      "noticeCta": "Request a walkthrough",
+      "meta": {
+        "role": "ROLE",
+        "period": "PERIOD",
+        "context": "CONTEXT",
+        "access": "ACCESS"
+      },
+      "accessValue": "Private",
+      "sectionsHeading": "WHAT I BUILT",
+      "footer": "PRIVATE PROJECT"
+    },
+    "items": {
+      "catardot": {
         "description": "A web diary inspired by the Homework for Life method, built with Next.js, Chakra UI, and Google Spreadsheet integration."
       },
-      {
-        "description": "Developed a proctoring feature for CBT using WebRTC and mediasoup, with three integrated applications for participants, proctors, and admins."
+      "online-exam-proctoring": {
+        "description": "Developed a proctoring feature for CBT using WebRTC and mediasoup, with three integrated applications for participants, proctors, and admins.",
+        "detail": {
+          "intro": "A WebRTC-based proctoring system for computer-based exams, with three connected applications for participants, proctors, and administrators.",
+          "meta": {
+            "role": "Full Stack Developer",
+            "period": "2024—2025",
+            "context": "Bachelor's Final Project"
+          },
+          "sections": {
+            "realtime": {
+              "title": "REAL-TIME SESSIONS",
+              "body": "WebRTC carries the live session between exam participants and proctors."
+            },
+            "media": {
+              "title": "MEDIA ROUTING",
+              "body": "mediasoup handles the media routing layer."
+            },
+            "apps": {
+              "title": "THREE CONNECTED APPS",
+              "body": "Participant, proctor, and admin interfaces, built as one integrated workflow."
+            }
+          }
+        }
       },
-      {
+      "medicin": {
         "description": "A System Information for Clinic Management built with Laravel and Filament 4."
       },
-      {
+      "sakoe": {
         "description": "A tip jar website built with Nuxt, Shadcn UI, Tailwind CSS, and Midtrans."
       },
-      {
+      "kongsi": {
         "description": "A split bill web application built with Nuxt, Shadcn UI, Tailwind CSS, and TypeScript."
       },
-      {
+      "terrmin": {
         "description": "A zero-friction, stateless tool designed to help remote teams coordinate meeting schedules across different time zones."
       }
-    ]
+    }
   },
   "contact": {
     "eyebrow": "LET'S TALK",
@@ -111,6 +152,7 @@
     "skills": { "title": "Skills - Ridha Arlian", "description": "Tools and craft used to make ideas tangible." },
     "experiences": { "title": "Experiences - Ridha Arlian", "description": "Professional experience of Ridha Arlian." },
     "projects": { "title": "Projects - Ridha Arlian", "description": "Selected projects and work by Ridha Arlian." },
+    "projectDetail": { "title": "Private Project: {name} - Ridha Arlian", "description": "A private project case study: {name}. No public demo is available." },
     "contact": { "title": "Contact - Ridha Arlian", "description": "Get in touch with Ridha Arlian for new projects and collaborations." }
   }
 }
