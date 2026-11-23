@@ -5,6 +5,7 @@
   import { useNetworkNodes } from '@/composables/useNetworkNodes'
   import { navigationNodes } from '@/data/navigation'
   import NetworkLines from '@/components/NetworkLines.vue'
+  import SakoeDonateButton from '@/components/SakoeDonateButton.vue'
 
   const localePath = useLocalePath()
   const active = ref('center')
@@ -22,6 +23,9 @@
       <div class="absolute left-3 top-3 font-mono text-[10px] tracking-widest text-muted-foreground sm:left-6 sm:top-6 sm:text-xs">
         {{ $t('graph.nodeNav') }}
       </div>
+
+      <SakoeDonateButton />
+
       <div class="absolute bottom-3 right-3 font-mono text-[10px] tracking-widest text-muted-foreground sm:bottom-6 sm:right-6 sm:text-xs">
         {{ $t('graph.selectNode') }}
       </div>

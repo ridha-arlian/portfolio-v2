@@ -8,6 +8,10 @@
     "dark": "MODE GELAP?",
     "light": "MODE TERANG?"
   },
+  "donate": {
+    "label": "TIP?",
+    "ariaLabel": "Buka Sakoe untuk mendukung karya ini"
+  },
   "graph": {
     "nodeNav": "NAVIGASI NODE // V1.0",
     "selectNode": "PILIH NODE UNTUK MENJELAJAH",
@@ -97,6 +101,9 @@
       "footer": "PROYEK PRIVAT"
     },
     "items": {
+      "semestria": {
+        "description": "Ruang kerja ringkas yang menyatukan tugas, materi, dan catatan dalam satu tempat, tanpa setup dan tanpa templat."
+      },
       "catardot": {
         "description": "Diari web yang terinspirasi metode Homework for Life, dibangun dengan Next.js, Chakra UI, dan integrasi Google Spreadsheet."
       },

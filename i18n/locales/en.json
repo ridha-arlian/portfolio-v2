@@ -8,6 +8,10 @@
     "dark": "DARK MODE?",
     "light": "LIGHT MODE?"
   },
+  "donate": {
+    "label": "TIP?",
+    "ariaLabel": "Open Sakoe to support this work"
+  },
   "graph": {
     "nodeNav": "NODE NAV // V1.0",
     "selectNode": "SELECT A NODE TO EXPLORE",
@@ -97,6 +101,9 @@
       "footer": "PRIVATE PROJECT"
     },
     "items": {
+      "semestria": {
+        "description": "A lightweight workspace that keeps tasks, materials, and notes together in one place, with no setup and no templates."
+      },
       "catardot": {
         "description": "A web diary inspired by the Homework for Life method, built with Next.js, Chakra UI, and Google Spreadsheet integration."
       },

@@ -12,6 +12,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     number: '01',
+    type: 'PRODUCT / 2026',
+    name: 'Semestria',
+    slug: 'semestria',
+    visibility: 'public',
+    url: 'https://semestria.my.id/',
+  },
+  {
+    number: '02',
     type: 'WEB / 2026',
     name: 'Catardot',
     slug: 'catardot',
@@ -19,7 +27,7 @@ export const projects: Project[] = [
     url: 'https://catardot.ridhaarlian.my.id/',
   },
   {
-    number: '02',
+    number: '03',
     type: 'WEB / 2025',
     name: 'Online Exam Proctoring Feature',
     slug: 'online-exam-proctoring',
@@ -27,7 +35,7 @@ export const projects: Project[] = [
     detailSections: ['realtime', 'media', 'apps'],
   },
   {
-    number: '03',
+    number: '04',
     type: 'SYSTEM / 2026',
     name: 'Medic.in',
     slug: 'medicin',
@@ -35,7 +43,7 @@ export const projects: Project[] = [
     url: 'https://medicin.ridhaarlian.my.id/',
   },
   {
-    number: '04',
+    number: '05',
     type: 'PRODUCT / 2025',
     name: 'Sakoe',
     slug: 'sakoe',
@@ -43,7 +51,7 @@ export const projects: Project[] = [
     url: 'https://sakoe.ridhaarlian.my.id/',
   },
   {
-    number: '05',
+    number: '06',
     type: 'PRODUCT / 2025',
     name: 'Kongsi',
     slug: 'kongsi',
@@ -51,7 +59,7 @@ export const projects: Project[] = [
     url: 'https://kongsi.ridhaarlian.my.id/',
   },
   {
-    number: '06',
+    number: '07',
     type: 'WEB / 2026',
     name: 'Terrmin',
     slug: 'terrmin',
